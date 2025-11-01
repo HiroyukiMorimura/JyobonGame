@@ -443,9 +443,7 @@ export default function SideScrollerGame() {
   return (
     <div className="w-full h-full flex items-center justify-center bg-neutral-900 p-4">
       <div className="max-w-[980px] w-full">
-        <h1 className="text-white text-xl mb-2">
-          じょぼん風 (ロングステージ版)
-        </h1>
+        <h1 className="text-white text-xl mb-2">じょぼん風</h1>
         <canvas
           ref={canvasRef}
           className="bg-black w-full h-auto rounded-2xl shadow-lg border border-white/10"
