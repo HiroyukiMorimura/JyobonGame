@@ -285,9 +285,9 @@ export default function SideScrollerGame() {
         const cy = player.y + player.h / 2;
         const t = tileAt(cx, cy);
         const DEATH_Y_PIXEL = T(11);
-        if (t === TILE_ID.Spike) player.alive = true; // トゲ (ID: 2) で死亡
+        if (t === TILE_ID.Spike) player.alive = false; // トゲ (ID: 2) で死亡
         if (t === TILE_ID.Flag) player.win = true;
-        if (player.y > DEATH_Y_PIXEL) player.alive = true;
+        if (player.y > DEATH_Y_PIXEL) player.alive = false;
       }
 
       // カメラ追従
